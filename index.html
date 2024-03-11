@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Set full height for the body and HTML */
+        body, html {
+            height: 100%;
+            margin: 0;  
+            scroll-snap-type: y mandatory;
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.075);
+            backdrop-filter: blur(5px);
+            padding: 1rem;
+            display: flex;
+            justify-content: right; /* Adjusted alignment */
+            align-items: center;
+            color: hsl(0, 0%, 100%);
+            font-weight: bold;
+            position: fixed; /* Fixed position to stay at the top */
+            top: 0;
+            right: 0;
+            min-width: 100vw;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .navbar-link {
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition-duration: 300ms;
+        }
+
+        .navbar-link:hover {
+            font-size: 1.21rem;
+        }
+
+        /* Define utility classes for each panel */
+        .panel {
+            min-height: 100vh; /* Full height of the viewport */
+            width: 100%; /* Full width of the viewport */
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            color: #fff; /* Text color */
+            background-position: center;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+
+        /* Background images for each panel */
+        .panel-1 {
+            background-image: url('https://images.aeonmedia.co/images/78ba87e7-7198-4468-81b5-500c505d5bc8/essay-gettyimages-1237093074.jpg'); /* Replace with your image URL */
+            background-color: black;
+        }
+
+        .panel-2 {
+            background-image: url('https://cms.bbcearth.com/sites/default/files/2021-10/Cover-image_Black_Hole_Universe_04_004.jpg');
+            background-color: black;
+            opacity: 120%;
+        }
+
+        .panel-3 {
+            background-image: url('https://cdn.mos.cms.futurecdn.net/HsDtpFEHbDpae6wBuW5wQo-970-80.jpg.webp');
+            background-color: black;
+        }
+
+        .panel-4 {
+            background-color: black;
+        }
+
+        .text-left {
+            margin-left: 3vw;
+            max-height: 100vh;
+        }
+
+        .content {
+            max-width: 75vw;
+            max-height: 75vh;
+            padding-right: 2rem;
+            padding-top: 2rem;
+        }
+
+        .card {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.46);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            transition-duration: 300ms;
+        }
+
+        .card:hover {
+            height: 102%;
+            width: 102%;
+            background-color: rgba(0, 0, 0, 0.595);
+            backdrop-filter: blur(70px);
+            border-radius: 0rem;
+        }
+
+        .about-description {
+            background-color: rgba(0, 0, 0, 0.13);
+            backdrop-filter: blur(70px);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar overflow-auto">
+        <div class="navbar-links">
+            <a href="#home" class=" navbar-link">Home</a>
+            <a href="#about" class=" navbar-link">About</a>
+            <a href="#portfolio" class=" navbar-link">Portfolio</a>
+            <a href="#contact" class=" navbar-link">Contact</a>
+        </div> 
+    </div>
+
+    <div id="home" class="panel panel-1 flex items-center h-screen">
+        
+        <div class="text-left">
+            <h4 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Vaishnavi Sarang</h4>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Sophomore, Product Design</p>
+        </div>
+    </div>
+
+    <div id="about" class="panel panel-2 flex justify-center items-center h-screen">
+        <div class="text-left">
+            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">About Me</h1>
+            <div class="content grid grid-cols-2 gap-8 items-center">
+                <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                    Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
+                    
+                </p>
+                <div class="flex flex-col items-center">
+                    <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                        Sophomore, Product Design
+                    </h1>
+                    <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                        Sophomore, Product Design
+                    </h1>
+                    <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                        Sophomore, Product Design
+                    </h1>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class="panel panel-3 flex justify-center items-center h-screen">
+        <div class="text-left">
+            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Portfolio</h1>
+            <div class="content grid grid-cols-4 gap-4 items-center">
+                <div class="card flex flex-col items-center">
+                    <img src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
+                    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Title</p>
+                    <p class="" style="margin:1rem">
+                        Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
+                    </p>
+                </div>  
+                <div class="card flex flex-col items-center">
+                    <img src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
+                    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Title</p>
+                    <p class="" style="margin:1rem">
+                        Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
+                    </p>
+                </div>  
+                <div class="card flex flex-col items-center">
+                    <img src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
+                    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Title</p>
+                    <p class="" style="margin:1rem">
+                        Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
+                    </p>
+                </div>   
+                <div class="card flex flex-col items-center">
+                    <img src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
+                    <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Title</p>
+                    <p class="" style="margin:1rem">
+                        Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
+                    </p>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="panel panel-4 flex justify-center items-center h-screen">
+        <div class="text-left">
+            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Get In Touch</h1>
+            <div class="content grid grid-cols-2 gap-8 items-center">
+                <div class="flex flex-col items-center">
+                    <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                        Coming Soon
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>    
+</body>
+
+</html>
