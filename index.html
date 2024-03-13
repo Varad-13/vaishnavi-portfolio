@@ -18,8 +18,8 @@
             background-image: url('assets/blackhole1.png');
             background-color: black;
             background-repeat: no-repeat;
-            background-position-x: -70rem;
-            background-position-y: -10rem;
+            background-position-x: -25rem;
+            background-position-y: 25rem;
         }
 
         /* Navigation bar styles */
@@ -68,9 +68,17 @@
         }
 
         .panel-1 {
+            background-image: url('assets/blackhole1.png');
+            background-repeat: no-repeat;
             background-color: rgba(0, 0, 0, 0.4);
         }
         .panel-2 {
+            
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .panel-3 {
+            
             background-color: rgba(0, 0, 0, 0.4);
         }
 
@@ -105,10 +113,10 @@
             border-radius: 0rem;
             box-shadow: 0px 0px 15px 25px rgba(64, 73, 0, 0.227);
             .thumbnail {
-            max-height: 100%;
-            width: 100%;
-            padding: 0rem;
-            border-radius: 0rem;
+                max-height: 100%;
+                width: 100%;
+                padding: 0rem;
+                border-radius: 0rem;
             }
             .cardText{
                 font-size: 1.01rem;
@@ -126,6 +134,9 @@
             backdrop-filter: blur(70px);
         }
 
+        .contact {
+            box-shadow: 0px 0px 15px 25px rgba(64, 73, 0, 0.227);
+        }
     </style>
 </head>
 
@@ -154,59 +165,48 @@
                 <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">About me</h1>
                 <div class="content grid grid-cols-2 gap-8 items-center">
                     <div>
-                        <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Hi there! I'm Vaishnavi</p>
+                        <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Hi There! I'm Vaishnavi<span id="cursor"></span></p>
                         <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
                             I'm currently a sophomore in product design at Atlasskilltech University. I'm a curious, adventurous, fond learner of new things, new experiences and am exceedingly passionate in product design and also proficient at multi-tasking. I am always enthusiastic when it comes to expanding my skills. I'm looking forward to opportunities which can help me grow as a designer and as an individual all in the pursuit of constantly evolving my undying passion in creativity, skill and knowledge.
                         </p>
                     </div>
                     
                     <div class="flex flex-col items-center">
-                        <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                            Sophomore, Product Design
-                        </h1>
-                        <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                            Sophomore, Product Design
-                        </h1>
-                        <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                            Sophomore, Product Design
-                        </h1>
+                        
                     </div>  
                 </div>
             </div>
         </div>
     
-        
-    </div>
-
-    <div id="portfolio" class="panel panel-3 flex justify-center items-center h-screen">
-        <div class="text-left">
-            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Portfolio</h1>
-            <div class="content grid grid-cols-4 gap-4 items-center">                
-                <a href=project1.html>
-                    <div class="card flex flex-col items-center">
-                        <img class="thumbnail" src="https://www.adoraa.in/cdn/shop/products/MG_0064.JPG?v=1702366609" alt="Card Image" style="padding-bottom:1rem"> 
-                        <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sports Car Mirror</p>
-                        <p class="">
-                            Playful, Energeatic, Active
-                        </p>
-                        <p class="" style="margin:1rem">
-                            Nature and form studies: Learning by taking inspiration from fennec fox. Conducting study on the animal to design form inspired by fennec fox with funcionality
-                        </p>
-                    </div> 
-                </a>
+        <div id="portfolio" class="panel panel-3 flex justify-center items-center h-screen">
+            <div class="text-left">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Portfolio</h1>
+                <div class="content grid grid-cols-4 gap-4">                
+                    <a href=project1.html>
+                        <div class="card flex flex-col items-center">
+                            <img class="thumbnail" src="https://www.adoraa.in/cdn/shop/products/MG_0064.JPG?v=1702366609" alt="Card Image" style="padding-bottom:1rem"> 
+                            <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sports Car Mirror</p>
+                            <p class="">
+                                Playful, Energeatic, Active
+                            </p>
+                            <p class="" style="margin:1rem">
+                                Nature and form studies: Learning by taking inspiration from fennec fox. Conducting study on the animal to design form inspired by fennec fox with funcionality
+                            </p>
+                        </div> 
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
+   
+
     <div id="contact" class="panel panel-4 flex justify-center items-center h-screen">
-        <div class="text-left">
-            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Get In Touch</h1>
-            <div class="content grid grid-cols-2 gap-8 items-center">
-                <div class="flex flex-col items-center">
-                    <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                        Coming Soon
-                </div>  
-            </div>
+        <div class="text-left flex flex-col items-center">
+            <h1 class="contact text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Get In Touch</h1>
+            <h1 class="contact text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl" style="padding: 1rem;">
+                Coming Soon
+            </h1>
         </div>
     </div>
     
@@ -227,6 +227,11 @@
     <script>
     new Typewriter('#typewriter', {
         strings: [' Hello!', ' היי!', ' שלום!', ' 你好!', ' Bună!', ' नमस्ते!', ' こんにちは!', ' 안녕!', ' Hi!',],
+        autoStart: true,   
+        loop: true,
+    });
+    new Typewriter('#cursor', {
+        strings: [''],
         autoStart: true,   
         loop: true,
     });
