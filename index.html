@@ -59,18 +59,18 @@
 
         /* Background images for each panel */
         .panel-1 {
-            background-image: url('https://images.aeonmedia.co/images/78ba87e7-7198-4468-81b5-500c505d5bc8/essay-gettyimages-1237093074.jpg'); /* Replace with your image URL */
+            background-image: ur(''); /* Replace with your image URL */
             background-color: black;
         }
 
         .panel-2 {
-            background-image: url('https://cms.bbcearth.com/sites/default/files/2021-10/Cover-image_Black_Hole_Universe_04_004.jpg');
+            background-image: url('');
             background-color: black;
             opacity: 120%;
         }
 
         .panel-3 {
-            background-image: url('https://cdn.mos.cms.futurecdn.net/HsDtpFEHbDpae6wBuW5wQo-970-80.jpg.webp');
+            background-image: url('https://cms.bbcearth.com/sites/default/files/2021-10/Cover-image_Black_Hole_Universe_04_004.jpg');
             background-color: black;
         }
 
@@ -127,21 +127,24 @@
     </div>
 
     <div id="home" class="panel panel-1 flex items-center h-screen">
-        
         <div class="text-left">
-            <h4 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Vaishnavi Sarang</h4>
-            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Sophomore, Product Design</p>
+            <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"><span id="typewriter"></span></p>
+            <h4 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">I'm Vaishnavi Sarang</h4>
+            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Product Designer</p>
         </div>
     </div>
 
     <div id="about" class="panel panel-2 flex justify-center items-center h-screen">
         <div class="text-left">
-            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">About Me</h1>
+            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Hi there!</h1>
             <div class="content grid grid-cols-2 gap-8 items-center">
-                <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                    Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
-                    
-                </p>
+                <div>
+                    <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"></p>
+                    <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                        I'm Vaishnavi Sarang. Currently a sophomore in product design, studying at Atlasskilltech University. I'm a curious, adventurous, fond learner of new things, new experiences and am exceedingly passionate in product design and also proficient at multi-tasking. I'm looking forward to opportunities which can help me grow as a designer and as an individual all in the pursuit of constantly evolving my undying passion in creativity, skill and knowledge.
+                    </p>
+                </div>
+                
                 <div class="flex flex-col items-center">
                     <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
                         Sophomore, Product Design
@@ -217,6 +220,15 @@
             });
         });
     </script>    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+    <script>
+    new Typewriter('#typewriter', {
+        strings: [' Hello!', ' היי!', ' שלום!', ' 你好!', ' Bună!', ' नमस्ते!', ' こんにちは!', ' 안녕!', ' Hi!',],
+        autoStart: true,   
+        loop: true,
+    });
+    </script>
 </body>
 
 </html>
