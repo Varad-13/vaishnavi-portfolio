@@ -11,11 +11,18 @@
             height: 100%;
             margin: 0;  
             scroll-snap-type: y mandatory;
+            background-color: black;
         }
+
+        .start {
+            background-image: url('https://github.com/Varad-13/vaishnavi-portfolio/blob/master/assets/blackhole1.png?raw=true');
+            background-color: black;
+            background-position: 25%;
+            }
 
         /* Navigation bar styles */
         .navbar {
-            background-color: rgba(255, 255, 255, 0.075);
+            background-color: rgba(255, 255, 255, 0.125);
             backdrop-filter: blur(5px);
             padding: 1rem;
             display: flex;
@@ -27,6 +34,7 @@
             top: 0;
             right: 0;
             min-width: 100vw;
+            z-index: 9999;
         }
 
         .navbar-links {
@@ -57,22 +65,6 @@
             scroll-snap-stop: always;
         }
 
-        /* Background images for each panel */
-        .panel-1 {
-            background-image: url('https://images.aeonmedia.co/images/78ba87e7-7198-4468-81b5-500c505d5bc8/essay-gettyimages-1237093074.jpg'); /* Replace with your image URL */
-            background-color: black;
-        }
-
-        .panel-2 {
-            background-image: url('https://github.com/Varad-13/vaishnavi-portfolio/blob/master/assets/blackhole1.png?raw=true');
-            background-color: black;
-        }
-
-        .panel-3 {
-            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVQ76BBabMUbEjsXpRzMg-KaUGPD58R-dQ5EmguiEKaVDprsu-gZ3qwnrUiXstzr0feeXfIPjROwOhriktjrOQQJaJcX04P_J4jYro_UATkf3Dj8AhZcOjMJ0OHVTKqMQuZBdrO3Ze184t/s1600/image10.jpg');
-            background-color: rgb(0, 0, 0);
-        }
-
         .panel-4 {
             background-color: black;
         }
@@ -90,27 +82,34 @@
         }
 
         .card {
-            height: 100%;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.001);
+            background-color: rgba(0, 0, 0, 0.404);
             backdrop-filter: blur(25px);
             border-radius: 1rem;
             transition-duration: 300ms;
+            border-color: white;
+            border-width: 0.1rem;
         }
 
         .card:hover {
-            height: 102%;
-            width: 102%; 
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.116);
             backdrop-filter: blur(10px);
             border-radius: 0rem;
             box-shadow: 0px 0px 15px 25px rgba(64, 73, 0, 0.227);
+            .thumbnail {
+            max-height: 100%;
+            width: 100%;
+            padding: 0rem;
+            border-radius: 0rem;
+            }
+            .cardText{
+                font-size: 1.01rem;
+            }
         }
 
         .thumbnail{
-            max-height: 90%;
-            width: 90%;
-            padding: 1rem;
+            padding: 1.2rem;
+            transition-duration: 300ms;
+            border-radius: 2rem;
         }
 
         .about-description {
@@ -132,38 +131,42 @@
         </div> 
     </div>
 
-    <div id="home" class="panel panel-1 flex items-center h-screen">
-        <div class="text-left">
-            <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"><span id="typewriter"></span></p>
-            <h4 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">I'm Vaishnavi Sarang</h4>
-            <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Product Designer</p>
-        </div>
-    </div>
-
-    <div id="about" class="panel panel-2 flex justify-center items-center h-screen">
-        <div class="text-left">
-            <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Hi there!</h1>
-            <div class="content grid grid-cols-2 gap-8 items-center">
-                <div>
-                    <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"></p>
-                    <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                        I'm Vaishnavi Sarang. Currently a sophomore in product design, studying at Atlasskilltech University. I'm a curious, adventurous, fond learner of new things, new experiences and am exceedingly passionate in product design and also proficient at multi-tasking. I'm looking forward to opportunities which can help me grow as a designer and as an individual all in the pursuit of constantly evolving my undying passion in creativity, skill and knowledge.
-                    </p>
-                </div>
-                
-                <div class="flex flex-col items-center">
-                    <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                        Sophomore, Product Design
-                    </h1>
-                    <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                        Sophomore, Product Design
-                    </h1>
-                    <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
-                        Sophomore, Product Design
-                    </h1>
-                </div>  
+    <div class="start">
+        <div id="home" class="panel panel-1 flex items-center h-screen">
+            <div class="text-left">
+                <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"><span id="typewriter"></span></p>
+                <h4 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">I'm Vaishnavi Sarang</h4>
+                <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Product Designer</p>
             </div>
         </div>
+    
+        <div id="about" class="panel panel-2 flex justify-center items-center h-screen">
+            <div class="text-left">
+                <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Hi there!</h1>
+                <div class="content grid grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl"></p>
+                        <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                            I'm Vaishnavi Sarang. Currently a sophomore in product design, studying at Atlasskilltech University. I'm a curious, adventurous, fond learner of new things, new experiences and am exceedingly passionate in product design and also proficient at multi-tasking. I'm looking forward to opportunities which can help me grow as a designer and as an individual all in the pursuit of constantly evolving my undying passion in creativity, skill and knowledge.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center">
+                        <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                            Sophomore, Product Design
+                        </h1>
+                        <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                            Sophomore, Product Design
+                        </h1>
+                        <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">
+                            Sophomore, Product Design
+                        </h1>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    
+        
     </div>
 
     <div id="portfolio" class="panel panel-3 flex justify-center items-center h-screen">
@@ -171,30 +174,30 @@
             <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Portfolio</h1>
             <div class="content grid grid-cols-4 gap-4 items-center">
                 <div class="card flex flex-col items-center">
-                    <img src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
+                    <img class="thumbnail" src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
                     <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Title</p>
-                    <p class="" style="margin:1rem">
+                    <p class="cardText" style="margin:1rem">
                         Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
                     </p>
                 </div>  
                 <div class="card flex flex-col items-center">
-                    <img src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
+                    <img class="thumbnail" src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
                     <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Title</p>
-                    <p class="" style="margin:1rem">
+                    <p class="cardText" style="margin:1rem">
                         Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
                     </p>
                 </div>  
                 <div class="card flex flex-col items-center">
-                    <img src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
+                    <img class="thumbnail" src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
                     <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Title</p>
-                    <p class="" style="margin:1rem">
+                    <p class="cardText" style="margin:1rem">
                         Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
                     </p>
                 </div>   
                 <div class="card flex flex-col items-center">
                     <img class="thumbnail" src="https://p1.hiclipart.com/preview/759/115/802/ace-of-spades-playing-cards-png-clipart.jpg" alt="Card Image" style="padding-bottom:1rem"> 
                     <p class="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Title</p>
-                    <p class="" style="margin:1rem">
+                    <p class="cardText" style="margin:1rem">
                         Sophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product DesignSophomore, Product Design
                     </p>
                 </div>  

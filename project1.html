@@ -10,12 +10,13 @@
         body, html {
             height: 100%;
             margin: 0;  
-            scroll-snap-type: y mandatory;
         }
 
         .start {
             background-image: url('https://github.com/Varad-13/vaishnavi-portfolio/blob/master/assets/portfolio%20pages.png?raw=true');
             background-color: black;
+            background-repeat: no-repeat;
+            background-size: 100vw;
         }
 
         /* Navigation bar styles */
@@ -125,26 +126,14 @@
 
 <body>
 
-    <div class="navbar overflow-auto">
-        <div class="navbar-links">
-            <a href="#home" class=" navbar-link">Home</a>
-            <a href="#about" class=" navbar-link">About</a>
-            <a href="#portfolio" class=" navbar-link">Portfolio</a>
-            <a href="#contact" class=" navbar-link">Contact</a>
-        </div> 
-    </div>
+
 
     <div class="start">
         <div id="home" class="panel panel-1 flex items-center h-screen">
 
-        </div>
+        </div> 
+        <div id="home" class="panel panel-1 flex items-center h-screen">
 
-        <div id="about" class="panel panel-2 flex justify-center items-center h-screen">
-        
-        </div>
-
-        <div id="portfolio" class="panel panel-3 flex justify-center items-center h-screen">
-            
         </div>
     </div>
     <div id="contact" class="panel panel-4 flex justify-center items-center h-screen">
@@ -160,17 +149,7 @@
     </div>
     
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-    
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
     <script>
