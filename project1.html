@@ -120,7 +120,14 @@
 
 <body>
 
-
+    <div class="navbar overflow-auto">
+        <div class="navbar-links">
+            <a href="index.html#home" class=" navbar-link">Home</a>
+            <a href="index.html#about" class=" navbar-link">About</a>
+            <a href="index.html#portfolio" class=" navbar-link">Portfolio</a>
+            <a href="#contact" class=" navbar-link">Contact</a>
+        </div> 
+    </div>
 
     <div class="start">
         <div id="home" class="panel-1">
@@ -150,6 +157,17 @@
         loop: true,
     });
     </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script> 
 </body>
 
 </html>
