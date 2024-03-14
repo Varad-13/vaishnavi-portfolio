@@ -115,6 +115,20 @@
             backdrop-filter: blur(70px);
         }
 
+
+        .contact {
+            background: -webkit-linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+            transform: scale(1, -1);
+            display: inline-block;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: blur(1px);
+        }
+
+        .reflection {
+            position: relative;
+            top: -3.5rem;
+        }
     </style>
 </head>
 
@@ -135,6 +149,20 @@
         </div> 
     </div>
     
+    <div id="contact" class="panel panel-4 flex justify-center items-center h-screen">
+        <div class="text-left flex flex-col items-center">
+            <h1 class=" text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Get In Touch</h1>
+            <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl" style="padding-top: 1rem;">
+                Coming Soon
+            </h1>
+            <div class="reflection flex flex-col items-center">
+                <h1 class="contact text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Get In Touch</h1>
+                <h1 class="contact text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl" style="padding-top: 1rem;">
+                    Coming Soon
+                </h1>
+            </div>
+        </div>
+    </div>
 
 
 
