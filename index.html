@@ -65,6 +65,7 @@
             background-position: center;
             scroll-snap-align: center;
             scroll-snap-stop: always;
+            overflow-y: auto;
         }
 
         .panel-1 {
@@ -130,8 +131,8 @@
         }
 
         .about-description {
-            background-color: rgba(0, 0, 0, 0.13);
-            backdrop-filter: blur(70px);
+            text-align: justify;
+            text-justify: inter-word;
         }
 
         .contact {
@@ -173,10 +174,10 @@
         <div id="about" class="panel panel-2 flex justify-center items-center h-screen">
             <div class="text-left">
                 <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">About me</h1>
-                <div class="content grid grid-cols-2 gap-8 items-center">
+                <div class="content md:flex md:flex-row lg:grid lg:grid-cols-2 gap-8 items-center">
                     <div>
                         <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Hi There! I'm Vaishnavi<span id="cursor"></span></p>
-                        <p class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                        <p class="about-description sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
                             I'm currently a sophomore in product design at Atlasskilltech University. I'm a curious, adventurous, fond learner of new things, new experiences and am exceedingly passionate in product design and also proficient at multi-tasking. I am always enthusiastic when it comes to expanding my skills. I'm looking forward to opportunities which can help me grow as a designer and as an individual all in the pursuit of constantly evolving my undying passion in creativity, skill and knowledge.
                         </p>
                     </div>
@@ -191,9 +192,9 @@
         <div id="portfolio" class="panel panel-3 flex justify-center items-center h-screen">
             <div class="text-left">
                 <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Portfolio</h1>
-                <div class="content grid grid-cols-4 gap-4">                
+                <div class="content md:flex md:flex-row lg:grid lg:grid-cols-4 gap-4">                
                     <a href=project1.html>
-                        <div class="card flex flex-col items-center">
+                        <div class="card flex flex-col mb-4 items-center">
                             <img class="thumbnail" src="assets/projects/thumbnail1.png" alt="Card Image" style="padding-bottom:1rem"> 
                             <p class="text-sm text-center sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sports car mirror</p>
                             <p class="">
@@ -204,39 +205,39 @@
                             </p>
                         </div> 
                     </a>
-                    <a href=project1.html>
-                        <div class="card flex flex-col items-center">
-                            <img class="thumbnail" src="assets/projects/thumbnail1.png" alt="Card Image" style="padding-bottom:1rem"> 
-                            <p class="text-sm text-center sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sports car mirror</p>
+                    <a href=project2.html>
+                        <div class="card flex flex-col mb-4 items-center">
+                            <img class="thumbnail" src="assets/projects/thumbnail2.png" alt="Card Image" style="padding-bottom:1rem"> 
+                            <p class="text-sm text-center sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Bridged</p>
                             <p class="">
-                                Nature and Form studies
+                                UIUX Design for a mobile app
                             </p>
                             <p class="" style="margin:1rem">
-                                Learning by taking inspiration from fennec fox. Conducting study on the animal to design form inspired by fennec fox with funcionality
+                                Bridged is a solution designed that aims to enhance the patient experience and enables them to efficiently manage their healthcare records securely in one place.
                             </p>
                         </div> 
                     </a>
-                    <a href=project1.html>
-                        <div class="card flex flex-col items-center">
-                            <img class="thumbnail" src="assets/projects/thumbnail1.png" alt="Card Image" style="padding-bottom:1rem"> 
-                            <p class="text-sm text-center sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sports car mirror</p>
+                    <a href=project3.html>
+                        <div class="card flex flex-col mb-4 items-center">
+                            <img class="thumbnail" src="assets/projects/thumbnail3.png" alt="Card Image" style="padding-bottom:1rem"> 
+                            <p class="text-sm text-center sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Space Models</p>
                             <p class="">
-                                Nature and Form studies
+                                Blender 3d Model
                             </p>
                             <p class="" style="margin:1rem">
-                                Learning by taking inspiration from fennec fox. Conducting study on the animal to design form inspired by fennec fox with funcionality
+                                Here’s 3d models created by me on Blender. Space has always fascinated me. This is my try re-creating the beauty above and beyond us.
                             </p>
                         </div> 
                     </a>
-                    <a href=project1.html>
-                        <div class="card flex flex-col items-center">
-                            <img class="thumbnail" src="assets/projects/thumbnail1.png" alt="Card Image" style="padding-bottom:1rem"> 
-                            <p class="text-sm text-center sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Sports car mirror</p>
+                    <a href=project4.html>
+                        <div class="card flex flex-col mb-4 items-center">
+                            <img class="thumbnail" src="assets/projects/thumbnail4.png" alt="Card Image" style="padding-bottom:1rem"> 
+                            <p class="text-sm text-center sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Wooden Lamp</p>
                             <p class="">
-                                Nature and Form studies
+                                Material exploration
                             </p>
                             <p class="" style="margin:1rem">
-                                Learning by taking inspiration from fennec fox. Conducting study on the animal to design form inspired by fennec fox with funcionality
+                                The wooden lamp is designed to give a wide variety of adjustments for the user to interact with it. The flexibility of the lamp to change according to user needs keeps it interesting.
                             </p>
                         </div> 
                     </a>

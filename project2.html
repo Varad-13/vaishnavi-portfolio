@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Set full height for the body and HTML */
+        body, html {
+            height: 100%;
+            margin: 0;  
+        }
+
+        /* Navigation bar styles */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.462);
+            backdrop-filter: blur(5px);
+            padding: 1rem;
+            display: flex;
+            justify-content: right; /* Adjusted alignment */
+            align-items: center;
+            color: hsl(0, 0%, 100%);
+            font-weight: bold;
+            position: fixed; /* Fixed position to stay at the top */
+            top: 0;
+            right: 0;
+            min-width: 100vw;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .navbar-link {
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition-duration: 300ms;
+        }
+
+        .navbar-link:hover {
+            font-size: 1.21rem;
+        }
+
+        /* Define utility classes for each panel */
+        .panel {
+            min-height: 100vh; /* Full height of the viewport */
+            width: 100%; /* Full width of the viewport */
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            color: #fff; /* Text color */
+            background-position: center;
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+
+        /* Background images for each panel */
+        .panel-1 {
+            max-width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .panel-2 {
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .panel-3 {
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .panel-4 {
+            background-color: black;
+        }
+
+        .text-left {
+            margin-left: 3vw;
+            max-height: 100vh;
+        }
+
+        .content {
+            max-width: 75vw;
+            max-height: 75vh;
+            padding-right: 2rem;
+            padding-top: 2rem;
+        }
+
+        .card {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.001);
+            backdrop-filter: blur(25px);
+            border-radius: 1rem;
+            transition-duration: 300ms;
+        }
+
+        .card:hover {
+            height: 102%;
+            width: 102%; 
+            background-color: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 0rem;
+            box-shadow: 0px 0px 15px 25px rgba(64, 73, 0, 0.227);
+        }
+
+        .thumbnail{
+            max-height: 90%;
+            width: 90%;
+            padding: 1rem;
+        }
+
+        .about-description {
+            background-color: rgba(0, 0, 0, 0.13);
+            backdrop-filter: blur(70px);
+        }
+
+
+        .contact {
+            background: -webkit-linear-gradient(transparent, rgba(255, 255, 255, 0.3));
+            transform: scale(1, -1);
+            display: inline-block;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: blur(1px);
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+
+        .reflection {
+            position: relative;
+            top: -3.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar overflow-auto">
+        <div class="navbar-links">
+            <a href="index.html#home" class=" navbar-link">Home</a>
+            <a href="index.html#about" class=" navbar-link">About</a>
+            <a href="index.html#portfolio" class=" navbar-link">Portfolio</a>
+            <a href="#contact" class=" navbar-link">Contact</a>
+        </div> 
+    </div>
+
+    <div class="start">
+        <div id="home" class="panel-1">
+            <img class="panel"src="assets/projects/project2.png">
+        </div> 
+    </div>
+    
+    <div id="contact" class="panel panel-4 flex justify-center items-center h-screen">
+        <div class="text-left flex flex-col items-center">
+            <h1 class=" text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Get In Touch</h1>
+            <h1 class=" text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl" style="padding-top: 1rem;">
+                Coming Soon
+            </h1>
+            <div class="reflection flex flex-col items-center">
+                <h1 class="contact text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl">Get In Touch</h1>
+                <h1 class="contact text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl" style="padding-top: 1rem;">
+                    Coming Soon
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+    <script>
+    new Typewriter('#typewriter', {
+        strings: [' Hello!', ' היי!', ' שלום!', ' 你好!', ' Bună!', ' नमस्ते!', ' こんにちは!', ' 안녕!', ' Hi!',],
+        autoStart: true,   
+        loop: true,
+    });
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script> 
+</body>
+
+</html>
